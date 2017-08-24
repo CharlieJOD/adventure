@@ -23,3 +23,7 @@ while True:
 
     direction = raw_input('which direction do you want to go?\n')
     position = valid_directions[direction]
+    if new_position:
+        position = new_position
+    else:
+        print "sorry, that isn't a valid direction"
